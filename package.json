@@ -1,0 +1,28 @@
+{
+  "name": "belma-besirevic",
+  "version": "1.0.0",
+  "description": "Portfolio and Contact Website of Belma Besirevic",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spunickt/portfolio-website.git"
+  },
+  "keywords": [
+    "web",
+    "developer",
+    "web",
+    "designer",
+    "Austria",
+    "Vienna",
+    "Wien"
+  ],
+  "author": "Belma Besirevic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/spunickt/portfolio-website/issues"
+  },
+  "homepage": "https://github.com/spunickt/portfolio-website#readme"
+}
