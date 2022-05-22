@@ -1,0 +1,38 @@
+.header {
+  background: var(--navbar-color);
+  border-bottom: 1px solid var(--light-border-color);
+  font-family: var(--heading-font);
+  height: 60px;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.header a {
+  margin-left: 20px; 
+}
+
+.header a:hover {
+  color: red; 
+}
+
+.innerNav {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: var(--page-width);
+  margin: 0 auto;
+}
+
+.toolbarSection, .socialNav {
+  display: flex;
+}
+
+.socialNav {
+  font-family: var(--body-font);
+  margin-left: 10px;
+}

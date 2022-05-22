@@ -1,0 +1,15 @@
+.article h2 {
+  color: var(--bright-font-color);
+  font-size: 2.3rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.article h3 {
+  color: var(--dark-font-color);
+  font-size: 1.4rem;
+  line-height: 1.4;
+  margin-bottom: 0;
+  font-family: var(--subheading-font);
+}

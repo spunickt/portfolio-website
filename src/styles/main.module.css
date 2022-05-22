@@ -1,0 +1,4 @@
+.layout {
+  margin: 150px auto 100px auto;
+  max-width: var(--page-width);
+}
