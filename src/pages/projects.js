@@ -14,7 +14,7 @@ export default function Projects({ data }) {
       <div className={articleStyles.article}>
       <h2>My Projects</h2>
       </div>
-      <section className={projectStyles.projectsGrid}>
+      <section className={projectStyles.projectGrid}>
         {projects.map(project => (
           <Link to={"/projects/" + project.frontmatter.slug} key={project.id}>
             <div className={projectStyles.projectBox}>

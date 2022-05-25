@@ -1,26 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400&family=Noto+Sans:wght@100;300;400;700&family=Rajdhani:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;400&family=Noto+Sans:wght@100;300;400;700&family=Rajdhani:wght@400;500&display=swap");
 
 :root {
-  --primary: #98ACD4;
-  --secondary: #C2D1F0;
+  --primary: #03ab68;
+  --secondary: #c2d1f0;
   --heading-color: #fff;
   --link-color: #fff;
   --border-color: #111;
   --background-color: #282c34;
-  --navbar-color: #1F232B;
-  --dark-opacity: rgba(0,0,0,0.2);
+  --navbar-color: #1f232b;
+  --dark-opacity: rgba(0, 0, 0, 0.2);
   --navbar-color-hover: #272a33;
   --sidebar-color-hover: #464e5f;
   --sidebar-color-focus: #57637c;
   --category-background-color: #1c1e24;
   --category-background-color-hover: #24272e;
-  --light-border-color: hsla(0,0%,100%,0.1);
+  --light-border-color: hsla(0, 0%, 100%, 0.1);
   --toolbar-background-color: #181818;
   --toolbar-color: #eee;
   --font-color: #d0d5df;
-  --dark-font-color: rgba(235,240,255,0.5);
+  --dark-font-color: rgba(235, 240, 255, 0.5);
   --bright-font-color: #eee;
-  --input-background: rgba(0,0,0,0.3);
+  --input-background: rgba(0, 0, 0, 0.3);
   --black: #111;
   --reverse: var(--background-color);
   --scrollbar: var(--navbar-color);
@@ -30,14 +30,17 @@
   --button-font-color: #fff;
   --page-width: 850px;
 
-  --heading-font: 'Noto Sans', sans-serif;
-  --subheading-font: 'Rajdhani', sans-serif;
-  --body-font: 'Karla', sans-serif;
+  --heading-font: "Noto Sans", sans-serif;
+  --subheading-font: "Rajdhani", sans-serif;
+  --body-font: "Karla", sans-serif;
 }
 
-*, :after, :before {
+*,
+:after,
+:before {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
 body {
@@ -63,9 +66,12 @@ p {
   font-family: var(--body-font);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--heading-color);
   font-family: var(--heading-font);
 }
-
-

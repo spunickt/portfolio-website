@@ -1,12 +1,11 @@
-import { graphql } from "gatsby"
 import React from "react"
 import Layout from "../components/Layout"
-import * as articleStyles from "../styles/article.module.css"
+import * as artcleStyles from "../styles/article.module.css"
 
 export default function Home() {
   return (
     <Layout>
-      <section className={articleStyles.article}>
+      <section className={artcleStyles.article}>
         <h2>Hello, I'm Belma</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta optio
