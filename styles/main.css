@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&family=Nunito+Sans:wght@300;400&display=swap");
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #0D0669;
+  background: -webkit-linear-gradient(top, #0D0669, #0836DF);
+  background: -moz-linear-gradient(top, #0D0669, #0836DF);
+  background: linear-gradient(to bottom, #0D0669, #0836DF);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  color: #FBFBFF;
+  font-size: 16px;
+  font-family: "Nunito Sans", sans-serif;
+  height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Cairo", sans-serif;
+  color: #EDF5FC;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 30vh;
+}
+
+.brand .brand-logo {
+  font-size: 2rem;
+  color: #EDF5FC;
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar .nav-list-item {
+  margin-left: 10px;
+}
+
+.navbar .nav-links {
+  color: #FBFBFF;
+  font-size: 1.5rem;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.navbar .nav-links:hover {
+  border-bottom: 4px solid #23CE6B;
+}
+
+@media (max-width: 769px) {
+  header {
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+    flex-direction: column;
+    height: 10vh;
+  }
+
+  .navbar .nav-links {
+    font-size: 1.5rem;
+  }
+}
+.footer {
+  text-align: center;
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.section-intro, .section-about, .section-contact {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.intro-heading {
+  grid-column: 2/5;
+}
+
+.about-heading {
+  grid-column: 2/5;
+}
+
+.about-text {
+  grid-column: 2/6;
+  font-size: 1.2rem;
+}
+
+.section-contact > div.form {
+  grid-column: 3/5;
+}
+
+/*# sourceMappingURL=main.css.map */

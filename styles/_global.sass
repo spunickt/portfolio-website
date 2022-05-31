@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&family=Nunito+Sans:wght@300;400&display=swap')
+
+//font variables 
+$font-heading: 'Cairo', sans-serif
+$font-body: 'Nunito Sans', sans-serif
+//color variables
+$color-body: #FBFBFF
+$color-heading: #EDF5FC
+$color-accent-emerald: #23CE6B
+//media queries
+$layout-breakpoint-extra-small: 400px
+$layout-breakpoint-small: 769px
+
+*, *:before, *:after 
+  box-sizing: border-box
+
+html, body
+  margin: 0
+  padding: 0
+
+body 
+  background: #0D0669
+  background: -webkit-linear-gradient(top, #0D0669, #0836DF)
+  background: -moz-linear-gradient(top, #0D0669, #0836DF)
+  background: linear-gradient(to bottom, #0D0669, #0836DF)
+  background-repeat: no-repeat
+  background-size: cover
+  width: 100%
+  color: $color-body
+  font-size: 16px
+  font-family: $font-body
+  height: 100vh
+
+h1, h2, h3, h4, h5, h6 
+  font-family: $font-heading
+  color: $color-heading
+  margin: 0
+  padding: 0
+
+h1 
+  font-size: 3.5rem
+  font-weight: 700
+  margin-bottom: 1rem
+
+h2
+  font-size: 2.5rem
+  font-weight: 700
+  margin-bottom: 1rem
+
+li 
+  list-style-type: none
+
+a 
+  text-decoration: none
+  
