@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <title>Belma Besirevic WebDev</title>
+  </head>
+  <body>
+    <header>
+      <div class="brand">
+        <a class="brand-logo" href="../index.html">Belma Besirevic</a>
+      </div>
+      <nav class="navbar">
+        <li class="nav-list-item">
+          <a href="./about.html" class="nav-links">About me</a>
+        </li>
+        <li class="nav-list-item">
+          <a href="#" class="nav-links">Projects</a>
+        </li>
+        <li class="nav-list-item"><a href="#" class="nav-links">Blog</a></li>
+        <li class="nav-list-item"><a href="#" class="nav-links">Resume</a></li>
+        <li class="nav-list-item">
+          <a href="./contact.html" class="nav-links">Contact</a>
+        </li>
+      </nav>
+    </header>
+    <section class="section-contact">
+      <article>
+        <form action="connect.php" method="post" class="form-group">
+          <div><label for="firstName">First Name</label>
+            <input type="text" name="firstName" placeholder="First Name"/>
+          
+        </div>
+          <form name="contact" method="POST" data-netlify="true">
+            <p>
+              <label>Your Name: <input type="text" name="name" /></label>
+            </p>
+            <p>
+              <label>Your Email: <input type="email" name="email" /></label>
+            </p>
+            <div class="field">
+              <div data-netlify-recaptcha="true"></div>
+            </div>
+            <p>
+              <label>Message: <textarea name="message"></textarea></label>
+            </p>
+            <p>
+              <button type="submit">Send</button>
+            </p>
+          </form>
+      </article>
+    </section>
+    <footer class="footer">
+      <p>Copyright Belma Besirevic 2022</p>
+    </footer>
+  </body>
+</html>
