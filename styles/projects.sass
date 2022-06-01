@@ -1,0 +1,53 @@
+.cards
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  grid-gap: 1rem
+  margin-bottom: 20px
+
+.card-box
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  background: #fff
+  border-radius: 5px
+  padding: 1rem
+  box-shadow: 0 0 10px rgba(0,0,0,0.1)
+  transition: all 0.2s ease-in-out
+  &:hover
+    box-shadow: 0 0 20px rgba(0,0,0,0.2)
+  .card-img
+    height: 200px
+    object-fit: cover
+  .card-title, .card-text
+    text-align: center
+    color: #333
+  .btn-projects
+    width: 100%
+    display: flex
+    justify-content: center
+    gap: 10px
+  .project-text
+    width: 100%
+  .btn-projects a button
+    width: 100%
+    padding: 10px
+    border: 0
+    background: #a18ef6
+    color: #fff
+    font-size: 1.2rem
+    font-weight: 700
+    cursor: pointer
+    &:hover
+      background: #fff
+      color: #a18ef6
+      box-shadow: 0 0 20px rgba(0,0,0,0.2)
+  
+
+Breakpoints
+@media (max-width: $breakpoint-medium)
+  .cards
+    grid-template-columns: repeat(2, 1fr)
+@media (max-width: $breakpoint-small)
+  .cards
+    grid-template-columns: repeat(1, 1fr)  

@@ -5,82 +5,107 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/main.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      rel="stylesheet">
     <title>Belma Besirevic WebDev</title>
   </head>
   <body>
-    <header>
-      <div class="brand">
-        <a class="brand-logo" href="../index.html">Belma Besirevic</a>
-      </div>
-      <nav class="navbar">
-        <li class="nav-list-item">
-          <a href="./about.html" class="nav-links">About me</a>
-        </li>
-        <li class="nav-list-item">
-          <a href="#" class="nav-links">Projects</a>
-        </li>
-        <li class="nav-list-item"><a href="#" class="nav-links">Blog</a></li>
-        <li class="nav-list-item"><a href="#" class="nav-links">Resume</a></li>
-        <li class="nav-list-item">
-          <a href="./contact.html" class="nav-links">Contact</a>
-        </li>
-      </nav>
-    </header>
-    <section class="section-contact">
-      <article>
-        <div class="contact-links">
-          <h3>Get in touch</h3>
-          <p>Lorem ipsum dolor sit.</p>
-          <p>Lorem ipsum dolor sit.</p>
-          <p>Lorem ipsum dolor sit.</p>
-          <p>Lorem ipsum dolor sit.</p>
-        </div>
-        <div class="contact-form">
-          <h3 class="heading-contact">Contact me</h3>
-          <form name="contact" method="POST" data-netlify="true">
-            <p>
-              <input
-                class="contact-input"
-                type="text"
-                name="name"
-                placeholder="First name"
-              />
-            </p>
-            <p>
-              <input
-                class="contact-input"
-                type="text"
-                name="name"
-                placeholder="Last name"
-              />
-            </p>
-            <p>
-              <input
-                class="contact-input"
-                type="email"
-                name="email"
-                placeholder="Last name"
-              />
-            </p>
-            <p>
-              <textarea
-                class="contact-input input-textarea"
-                name="message"
-                placeholder="Message"
-              ></textarea>
-            </p>
-            <div class="field">
-              <div data-netlify-recaptcha="true"></div>
+    <div id="container">
+      <div id="content-wrap">
+        <header>
+          <div class="brand">
+            <a class="brand-logo" href="../index.html">Belma Besirevic</a>
+          </div>
+          <nav class="navbar">
+            <li class="nav-list-item">
+              <a href="./about.html" class="nav-links">About me</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="./projects.html" class="nav-links">Projects</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#" class="nav-links">Blog</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#" class="nav-links">Resume</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="./contact.html" class="nav-links">Contact</a>
+            </li>
+          </nav>
+        </header>
+        <section class="section-contact">
+          <article>
+            <div class="contact-links">
+              <h3>Get in touch</h3>
+              <div>
+                <a href="#" class="link"
+                  ><i class="fa-brands fa-github"></i>
+                  Github</a
+                >
+              </div>
+              <div>
+                <a href="#" class="link"
+                  ><i class="fa-brands fa-twitter"></i>
+                  Twitter</a
+                >
+              </div>
+              <div>
+                <a href="#" class="link"
+                  ><i class="fa-solid fa-envelope"></i>
+                  E-mail</a
+                >
+              </div>
             </div>
-            <p>
-              <button class="contact-btn-submit" type="submit">Send</button>
-            </p>
-          </form>
-        </div>
-      </article>
-    </section>
-    <footer class="footer">
-      <p>Copyright Belma Besirevic 2022</p>
-    </footer>
+            <div class="contact-form">
+              <form name="contact" method="POST" data-netlify="true">
+                <p>
+                  <input
+                    class="contact-input"
+                    type="text"
+                    name="name"
+                    placeholder="First name"
+                  />
+                </p>
+                <p>
+                  <input
+                    class="contact-input"
+                    type="text"
+                    name="name"
+                    placeholder="Last name"
+                  />
+                </p>
+                <p>
+                  <input
+                    class="contact-input"
+                    type="email"
+                    name="email"
+                    placeholder="Last name"
+                  />
+                </p>
+                <p>
+                  <textarea
+                    class="contact-input input-textarea"
+                    name="message"
+                    placeholder="Message"
+                  ></textarea>
+                </p>
+                <div class="field">
+                  <div data-netlify-recaptcha="true"></div>
+                </div>
+                <p>
+                  <button class="contact-btn-submit" type="submit">Send</button>
+                </p>
+              </form>
+            </div>
+          </article>
+        </section>
+        <footer class="footer">
+          <p>Copyright Belma Besirevic 2022</p>
+        </footer>
+      </div>
+    </div>
+
+    <script src="../js/main.js"></script>
   </body>
 </html>
