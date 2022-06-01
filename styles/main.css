@@ -1,16 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&family=Nunito+Sans:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&family=Nunito+Sans:wght@300;400&display=swap");
 *, *:before, *:after {
   box-sizing: border-box;
 }
 
 html {
   background: #0D0669;
-  background: -webkit-linear-gradient(top, #0D0669, #0836DF);
-  background: -moz-linear-gradient(top, #0D0669, #0836DF);
-  background: linear-gradient(to bottom, #0D0669, #0836DF);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
 }
 
 html, body {
@@ -22,6 +17,12 @@ body {
   color: #FBFBFF;
   font-size: 16px;
   font-family: "Nunito Sans", sans-serif;
+  background: -webkit-linear-gradient(top, #0D0669, #0836DF);
+  background: -moz-linear-gradient(top, #0D0669, #0836DF);
+  background: linear-gradient(to bottom, #0D0669, #0836DF);
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -55,12 +56,21 @@ p {
   font-size: 1.2rem;
 }
 
+input, select, textarea {
+  color: #FBFBFF;
+}
+
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active {
+  transition-delay: 9999s;
+  transition-property: background-color, color;
+}
+
 header {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  height: 30vh;
+  height: 27vh;
 }
 
 .brand .brand-logo {
@@ -92,11 +102,21 @@ header {
     height: 20vh;
   }
 }
+foooter .footer {
+  width: 100%;
+  display: inline-flexbox;
+  justify-content: center;
+  align-content: center;
+}
+
+.footer p {
+  text-align: center;
+}
+
 .section-intro, .section-about, .section-contact {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: auto;
-  height: 100%;
 }
 
 .section-intro > article {
@@ -108,15 +128,164 @@ header {
 }
 
 .section-contact > article {
-  grid-column: 3/5;
+  grid-column: 2/6;
 }
 
-.footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  text-align: center;
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  background: #0D0669;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #FBFBFF;
+  font-size: 16px;
+  font-family: "Nunito Sans", sans-serif;
+  background: -webkit-linear-gradient(top, #0D0669, #0836DF);
+  background: -moz-linear-gradient(top, #0D0669, #0836DF);
+  background: linear-gradient(to bottom, #0D0669, #0836DF);
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Cairo", sans-serif;
+  color: #EDF5FC;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+input, select, textarea {
+  color: #FBFBFF;
+}
+
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active {
+  transition-delay: 9999s;
+  transition-property: background-color, color;
+}
+
+.section-contact article {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.section-contact article h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #735CDD;
+  padding: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-input {
+  font-family: inherit;
+  font-size: inherit;
+  border: 0;
+  padding: 10px;
+  box-shadow: none;
+  outline: 0;
+  background: transparent;
+  transition: border-color 0.2s;
+  border-bottom: 3px solid #a18ef6;
+  width: 500px;
+}
+.contact-input::placeholder {
+  color: #FBFBFF;
+}
+
+.contact-input:focus {
+  border-bottom: 3px solid #23CE6B;
+}
+
+.input-textarea {
+  height: 150px;
+}
+
+.contact-btn-submit {
+  padding: 10px 20px;
+  width: 130px;
+  height: 60px;
+  background: #23CE6B;
+  border: none;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #071E40;
+  cursor: pointer;
+}
+
+.contact-btn-submit:hover {
+  background: #3ADA7C;
+}
+
+@media (max-width: 1350px) {
+  .section-contact article {
+    flex-direction: column-reverse;
+    gap: 0;
+  }
+
+  .contact-form {
+    margin-bottom: 20px;
+  }
+
+  .contact-links {
+    flex-direction: row;
+    width: 100vw;
+    padding: 0;
+  }
+  .contact-links h3 {
+    display: none;
+  }
+  .contact-links p {
+    margin-left: 10px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
